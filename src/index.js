@@ -1,11 +1,8 @@
-import Person from "./person"
-import "./styles/style.css"
-import "./styles/style.less" 
-import "./styles/style.scss"
-import icon from "./images/webpack_logo.png"
+import React from "react"
+import ReactDOM from "react-dom"
 
-const alex = new Person('Alex', '28', 'Belarus')
-console.log(alex)
-document.querySelector('.img img').src = icon
+const app = <h1>Shivers React App</h1>
+
+ReactDOM.render(app, document.getElementById('root'))
 
 console.log('webpack is working')
